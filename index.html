@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Fleur Lemoyne</title>
+  <meta name="description" content="Hier vind je het portfolio van Fleur Lemoyne, een student systeem en netwerkbeheer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="css/tailwind.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col justify-between">
+  <div>
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="flex items-center space-x-3">
+            <img src="images/logo.png" alt="FL Logo" width="40" height="40" class="h-9 w-auto object-contain">
+            <span class="text-xl font-bold text-gray-900 tracking-tight">Fleur Lemoyne</span>
+          </a>
+
+          <label for="menu-toggle"
+            class="md:hidden border border-gray-300 rounded-lg px-3 py-1.5 text-gray-700 text-sm font-medium cursor-pointer hover:bg-gray-50 select-none">
+            Menu
+          </label>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+        <nav class="hidden peer-checked:block md:block mt-4 md:mt-0">
+          <ul class="flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-2">
+
+            <li>
+              <a href="index.html" aria-current="page"
+                class="block px-3 py-2 rounded-lg bg-blue-100 text-blue-900 font-semibold transition-colors">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="portfolio.html"
+                class="block px-3 py-2 rounded-lg text-gray-700 font-medium hover:bg-gray-100 transition-colors">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="project.html"
+                class="block px-3 py-2 rounded-lg text-gray-700 font-medium hover:bg-gray-100 transition-colors">
+                Project
+              </a>
+            </li>
+            <li>
+              <a href="contact.html"
+                class="block px-3 py-2 rounded-lg text-gray-700 font-medium hover:bg-gray-100 transition-colors">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="relative bg-slate-900 text-white py-20 bg-[url('images/bureau.jpg')] bg-cover bg-center">
+      <div class="absolute inset-0 bg-slate-950/75"></div>
+      <div class="relative max-w-5xl mx-auto px-4 space-y-3">
+        <span class="text-blue-400 uppercase tracking-widest text-xs font-semibold block">PORTFOLIO</span>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight">Fleur Lemoyne</h1>
+        <p class="text-slate-300 text-lg md:text-xl max-w-2xl leading-relaxed">
+          Student systeem- en netwerkbeheer aan AP Hogeschool Antwerpen.
+        </p>
+      </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-4 my-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <main class="md:col-span-2 space-y-8">
+
+        <section
+          class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col sm:flex-row items-center gap-6">
+          <img src="images/profielfoto.jpg" alt="Profielfoto Fleur Lemoyne" width="400" height="400"
+            class="size-28 rounded-full object-cover shrink-0 shadow-sm">
+          <div class="space-y-2 text-center sm:text-left">
+            <h2 class="text-2xl font-bold text-gray-900 tracking-tight">Over mij</h2>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              Gepassioneerd door IT, netwerken en webtechnologie. Op deze site vind je mijn meest recente projecten en
+              opstellingen.
+            </p>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-xl font-bold text-gray-900 tracking-tight">Uitgelichte Beelden</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <figure class="bg-white p-3 rounded-lg border border-gray-200 shadow-sm text-center space-y-2">
+              <img src="images/bureau.jpg" alt="Werkplek en development setup" width="800" height="500"
+                class="w-full aspect-video rounded object-cover">
+              <figcaption class="text-xs text-gray-500 italic">Mijn Werkplek</figcaption>
+            </figure>
+            <figure class="bg-white p-3 rounded-lg border border-gray-200 shadow-sm text-center space-y-2">
+              <img src="images/serverruimte.jpg" alt="Data center serverruimte" width="800" height="500"
+                class="w-full aspect-video rounded object-cover">
+              <figcaption class="text-xs text-gray-500 italic">Serverruimte</figcaption>
+            </figure>
+            <figure class="bg-white p-3 rounded-lg border border-gray-200 shadow-sm text-center space-y-2">
+              <img src="images/overleg.jpg" alt="Teamoverleg en wireframing" width="800" height="500"
+                class="w-full aspect-video rounded object-cover">
+              <figcaption class="text-xs text-gray-500 italic">Teamoverleg</figcaption>
+            </figure>
+          </div>
+        </section>
+
+      </main>
+
+      <aside class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm self-start space-y-3">
+        <h2 class="text-xl font-bold text-gray-900">ik bedenk nog tekst voor hier</h2>
+        <p class="text-sm text-gray-600 leading-relaxed"> bezig met het bedenken van de tekst</p>
+      </aside>
+    </div>
+  </div>
+  <footer class="bg-white border-t border-gray-200 mt-12 py-6 text-center text-sm text-gray-500">
+    <div class="max-w-5xl mx-auto px-4">
+      <p>&copy; 2026 Fleur Lemoyne — Student systeem- en netwerkbeheer aan AP Hogeschool Antwerpen.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
